@@ -80,7 +80,9 @@ Connection is handled using JDBC:
 ```java
 DriverManager.getConnection(URL, USER, PASSWORD);
 
-## Project Structure
+---
+
+### Project Structure
 
 project_bankApplication/
 │
