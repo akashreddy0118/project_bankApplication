@@ -73,6 +73,28 @@ The project uses MySQL with the following tables:
 
 ---
 
+##  Project Structure
+
+project_bankApplication/
+│
+├── src/
+│   ├── BankApplication.java
+│   ├── UserRegistration.java
+│   ├── UserLogin.java
+│   ├── UserOperations.java
+│   ├── TransactionService.java
+│   ├── AdminOperations.java
+│   ├── PasswordUtils.java
+│   └── SetConnection.java
+│
+├── database/
+│   └── projectBankApplication.sql
+│
+├── docs/
+│   └── Bank Application Project.pdf
+│
+└── README.md
+
 ##  Database Connection
 
 Connection is handled using JDBC:
@@ -81,18 +103,3 @@ Connection is handled using JDBC:
 DriverManager.getConnection(URL, USER, PASSWORD);
 
 ---
-
-### Project Structure
-
-project_bankApplication/
-│
-├── BankApplication.java        # Main entry point
-├── UserRegistration.java       # User signup logic
-├── UserLogin.java              # Login system
-├── UserOperations.java         # Balance check
-├── TransactionService.java     # Deposit & withdrawal
-├── AdminOperations.java        # Admin features
-├── PasswordUtils.java          # Password hashing
-├── SetConnection.java          # DB connection
-├── projectBankApplication.sql  # Database schema
-├── Bank Application Project.pdf
